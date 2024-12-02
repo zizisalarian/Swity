@@ -4,7 +4,9 @@
     --second-color: #FF7328;
     --success-color: #00C94D;
     --light-color: #ACACAC;
-    --common-color: #505050
+    --color-1: #646464;
+    --color-2: #505050;
+    --color-3: #2C2C2C;
 }
 
 *{
@@ -19,8 +21,12 @@
 }
 body{
     font-family: yekan;
+    font-weight: 500;
     min-height: 100vh;
 
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 , p{
+    margin:0
 }
 .radius-15{
     border-radius: 15px;
@@ -37,8 +43,17 @@ body{
 .txt-main{
     color: var(--main-color);
 }
-.txt-common{
-    color: var(--main-color);
+.txt-1{
+    color: var(--color-1);
+}
+.txt-2{
+    color: var(--color-2);
+}
+.txt-3{
+    color: var(--color-3);
+}
+.gap-12{
+    gap: 12px
 }
 
 
@@ -50,5 +65,28 @@ header{
     }
     .logo-container{
         width: 70px;
+    }
+    .nav-item{
+        font-size: 1rem;
+    }
+    .menu-container{
+        height: calc(100% - 30px);
+        /* background-color: #55555555; */
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .navbar-brand{
+        font-size: 1rem;
+        
+    }
+    .basket-price{
+        h6{
+            font-size: 1rem;
+        }
+        span{
+            font-size: 0.8rem;
+        }
     }
 }

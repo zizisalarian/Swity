@@ -23,20 +23,27 @@
 
                 <img class="w-100" src="./assets/images/logo.png" alt="">
             </a>
-            <div class="d-flex justify-content-between">
+            <div class="menu-container d-flex justify-content-between align-items-center position-absolute bottom-0 w-100 ">
                 <div class="right">
-                    <div class="basket-container">
-                        <div class="basket-icon"></div>
+                    <div class="basket-container d-flex justify-content-start align-items-center gap-12">
+                        <div class="basket-icon position-relative">
+                            <span class="basket-dot position-absolute"></span>
+                            <span class="basket-dot position-absolute"></span>
+                            <span class="basket-notif position-absolute"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="23" viewBox="0 0 17 23" fill="none">
+                                <path d="M6.00241 5.2V4.15C6.00241 3.31457 6.26555 2.51335 6.73395 1.92261C7.20234 1.33187 7.83762 1 8.50003 1C9.16244 1 9.79772 1.33187 10.2661 1.92261C10.7345 2.51335 10.9977 3.31457 10.9977 4.15V5.2M15.3468 12.0523C14.859 8.77525 14.6159 7.1362 13.6901 6.1681C12.7668 5.2 11.4447 5.2 8.79975 5.2H8.20032C5.55617 5.2 4.2341 5.2 3.30914 6.1681C2.38419 7.1362 2.14109 8.77525 1.65322 12.0523C0.96804 16.6607 0.625866 18.9644 1.62491 20.4827C2.62396 22.001 4.48219 22 8.19949 22H8.80058C12.5179 22 14.3769 22 15.3752 20.4827C15.9546 19.6007 16.0828 18.4562 15.9546 16.75" stroke="#707070" stroke-linecap="round"/>
+                                </svg>
+                        </div>
                         <div class="basket-price">
                             <h6>سبد خرید</h6>
-                            <span class="txt-second"></span>
+                            <span class="txt-second">230.000 تومان</span>
                         </div>
                     </div>
                     <div class="search-container"></div>
                 </div>
                 <div class="left">
                     <nav class="navbar navbar-expand-lg ">
-                        <div class="container-fluid">
+                        <div class="container-fluid gap-3">
 
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -44,7 +51,7 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                                <ul class="navbar-nav">
+                                <ul class="navbar-nav gap-12">
                                     <li class="nav-item">
                                         <a class="nav-link active" aria-current="page" href="#">صفحه نخست</a>
                                     </li>
@@ -57,21 +64,19 @@
                                         <a class="nav-link" href="#">درباره ما</a>
                                     </li>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">حساب کاربری
-
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                                viewBox="0 0 22 22" fill="none">
-                                                <path
-                                                    d="M6.0298 14.1918C4.73271 14.9636 1.33188 16.5403 3.40355 18.5139C4.41463 19.4773 5.54121 20.1666 6.95746 20.1666H15.0406C16.4578 20.1666 17.5844 19.4773 18.5955 18.5139C20.6671 16.5403 17.2663 14.9636 15.9692 14.1918C14.4639 13.3025 12.7475 12.8334 10.999 12.8334C9.25063 12.8334 7.53516 13.3025 6.0298 14.1918ZM15.125 5.95831C15.125 7.05233 14.6904 8.10154 13.9168 8.87513C13.1432 9.64872 12.094 10.0833 11 10.0833C9.90595 10.0833 8.85674 9.64872 8.08315 8.87513C7.30956 8.10154 6.87496 7.05233 6.87496 5.95831C6.87496 4.8643 7.30956 3.81509 8.08315 3.0415C8.85674 2.26791 9.90595 1.83331 11 1.83331C12.094 1.83331 13.1432 2.26791 13.9168 3.0415C14.6904 3.81509 15.125 4.8643 15.125 5.95831Z"
-                                                    stroke="#707070" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </a>
-                                    </li>
 
                                 </ul>
                             </div>
-                            <a class="navbar-brand" href="#">Navbar</a>
+                            <a class="navbar-brand txt-light" href="#">
+
+                                حساب کاربری
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 22 22" fill="none">
+                                <path
+                                    d="M6.0298 14.1918C4.73271 14.9636 1.33188 16.5403 3.40355 18.5139C4.41463 19.4773 5.54121 20.1666 6.95746 20.1666H15.0406C16.4578 20.1666 17.5844 19.4773 18.5955 18.5139C20.6671 16.5403 17.2663 14.9636 15.9692 14.1918C14.4639 13.3025 12.7475 12.8334 10.999 12.8334C9.25063 12.8334 7.53516 13.3025 6.0298 14.1918ZM15.125 5.95831C15.125 7.05233 14.6904 8.10154 13.9168 8.87513C13.1432 9.64872 12.094 10.0833 11 10.0833C9.90595 10.0833 8.85674 9.64872 8.08315 8.87513C7.30956 8.10154 6.87496 7.05233 6.87496 5.95831C6.87496 4.8643 7.30956 3.81509 8.08315 3.0415C8.85674 2.26791 9.90595 1.83331 11 1.83331C12.094 1.83331 13.1432 2.26791 13.9168 3.0415C14.6904 3.81509 15.125 4.8643 15.125 5.95831Z"
+                                    stroke="#707070" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </a>
                         </div>
                     </nav>
                 </div>
