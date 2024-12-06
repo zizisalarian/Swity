@@ -1,92 +1,329 @@
-:root{
-    --main-color:#0040C9;
-    --main-color-light:#D9E3F6;
+:root {
+    --main-color: #0040C9;
+    --main-color-light: #D9E3F6;
     --second-color: #FF7328;
     --success-color: #00C94D;
     --light-color: #ACACAC;
     --color-1: #646464;
     --color-2: #505050;
     --color-3: #2C2C2C;
+    --color-4: #E0E0E0;
+
 }
 
-*{
-    
+* {
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-@font-face {
+
+/* @font-face {
     font-family: yekan;
     src: url(./assets/fonts/Yekan.ttf) format(truetype);
-}
-body{
-    font-family: yekan;
-    font-weight: 500;
+} */
+body {
+    font-family: Vazir;
+    font-weight: 400;
     min-height: 100vh;
+    overflow-x: hidden;
 
 }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 , p{
-    margin:0
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0
 }
-.radius-15{
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none
+}
+
+.radius-15 {
     border-radius: 15px;
 }
-.radius-7{
+
+.radius-20 {
+    border-radius: 20px;
+}
+
+.radius-2r {
+    border-radius: 2rem;
+}
+
+.radius-7 {
     border-radius: 7px;
 }
-.txt-second{
+
+.txt-second {
     color: var(--second-color);
 }
-.txt-light{
+
+.txt-light {
     color: var(--light-color);
 }
-.txt-main{
+
+.txt-main {
     color: var(--main-color);
 }
-.txt-1{
+
+.txt-1 {
     color: var(--color-1);
 }
-.txt-2{
+
+.txt-2 {
     color: var(--color-2);
 }
-.txt-3{
+
+.txt-3 {
     color: var(--color-3);
 }
-.gap-12{
+
+.gap-12 {
     gap: 12px
 }
 
+.shadow {
+    box-shadow: 4px 2px 10px #00000012;
+}
 
 
-header{
-    svg{
+header {
+    svg {
         width: 100%;
         height: 50%;
     }
-    .logo-container{
+
+    .logo-container {
         width: 70px;
     }
-    .nav-item{
+
+    .nav-item {
         font-size: 1rem;
     }
-    .menu-container{
-        height: calc(100% - 30px);
+
+    .menu-container {
+        margin-top: -100px;
+
         /* background-color: #55555555; */
-        svg{
+        svg {
             width: 30px;
             height: 30px;
         }
     }
-    .navbar-brand{
+
+    .navbar-brand {
         font-size: 1rem;
-        
+
     }
-    .basket-price{
-        h6{
+
+    .basket-price {
+        border-left: 1px solid var(--color-4);
+
+        h6 {
             font-size: 1rem;
         }
-        span{
+
+        span {
             font-size: 0.8rem;
         }
+    }
+}
+
+.main-page-title {
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+.card-model-1-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+    .card-model-1 {
+        box-shadow: 4px 2px 10px #00000012;
+        background-color: #fff;
+    }
+
+    .number {
+        color: #BBBBBB
+    }
+
+    .content {
+
+        .img-container {
+            height: 60px;
+            width: auto;
+            aspect-ratio: 1;
+
+            .img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                background: url(./assets/images/ps5.png);
+                background-size: cover;
+                background-position: center;
+                z-index: 4;
+                position: relative
+            }
+
+            .img-shadow {
+                position: absolute;
+                width: 70%;
+                aspect-ratio: 1.1;
+                top: 50%;
+                right: 50%;
+                background-color: var(--main-color-light);
+                border-radius: 35%;
+                z-index: 0
+            }
+        }
+
+        h5 {
+            font-size: 1rem;
+            color: var(--color-2);
+            font-family: Vazir, 'Segoe UI';
+            font-weight: 400;
+        }
+
+        p {
+            font-size: .8rem;
+            color: var(--main-color)
+        }
+    }
+
+    .show-more {
+        height: 100%;
+        aspect-ratio: 1;
+        width: auto;
+        background-color: var(--main-color-light);
+        opacity: 42%;
+        font-size: .7rem;
+        font-weight: 300;
+        color: var(--main-color)
+    }
+}
+
+.show-all-list {
+    color: #fff;
+    background-color: var(--second-color);
+    font-size: .9rem;
+    width: fit-content;
+    border-radius: 1.5rem;
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem
+    }
+}
+
+.slider-header {
+    h5 {
+        color: var(--color-3);
+        font-size: 1.2rem;
+        font-weight: 500
+    }
+
+    a {
+        color: #0084FF;
+
+        svg {
+            margin-right: 5px;
+
+            path {
+
+                stroke: #0084FF;
+            }
+        }
+
+    }
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+.big-card {
+    .img {
+        img {
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    h6 {
+        font-weight: 400;
+        font-size: 1rem;
+        color: #505050
+    }
+
+    .price {
+        font-size: 1.1rem;
+        color: #383838;
+        font-weight: 500
+    }
+
+    .add-basket {
+        color: #fff;
+        font-size: .9rem;
+        background-color: var(--success-color);
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem
+        }
+    }
+
+    .flag {
+        width: 1.6rem;
+
+        /* background-color: red; */
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.hr-card{
+    width:450px;
+    height: 150px;
+    flex-shrink: 0;
+    background-color: red;
+    margin-left: 25px;
+    .img{
+        aspect-ratio: 1;
     }
 }
