@@ -1,22 +1,4 @@
-.breadcrumb-container {
-    li {
-        a {
-            color: #ACACAC;
-        }
-    }
 
-    li:not(:first-child)::before {
-        content: '/';
-        color: #ACACAC;
-        margin: 0 0.3rem;
-    }
-}
-
-.purchase h2 {
-    font-size: 1.5rem;
-    color: #505050;
-    font-weight: 600;
-}
 
 .account-card {
     flex: 1 0 0;

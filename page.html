@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/lib/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./font.css">
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./purchase.css">
+    <link rel="stylesheet" href="./page.css">
 
     <title>Sonic</title>
 </head>
@@ -123,8 +123,8 @@
 
     <main>
 
-        <section class="purchase container mt-5">
-            <div class="purchase-header page-details-header text-center">
+        <section class="container mt-5">
+            <div class="page-details-header text-center">
                 <nav class="breadcrumb-container">
 
                     <ul class="d-flex justify-content-center align-items-center">
@@ -134,93 +134,10 @@
                     </ul>
 
                 </nav>
-                <h2>پرداخت</h2>
+                <h2>تک صفحه</h2>
             </div>
-            <div class="purchase-content mt-5 d-flex justify-content-between align-items-start gap-5">
-                <div class="account-info account-card rounded-4 p-4 d-flex flex-column justify-content-start align-items-start gap-3">
-                    <h2>اطاعات حساب </h2>
-                    <span class="hr-line d-inline-block w-100"></span>
-                    <p class="warning p-4 rounded-4">توجه : ما برای شارژ حساب شما به این اطلاعات نیاز داریم پس فیلد های زیر را به دقت پر کنید...</p>
-                    <form action="" class="w-100 d-flex flex-column justify-content-start align-items-start gap-3">
-                        <label for="email">ایمیل حساب</label>
-                        <input type="email" id="email" class="text-start p-3 w-100 rounded-4" placeholder="ایمیلتان را اینجا بنویسید">
-                        <label for="password">رمز عبور</label>
-                        <input type="password" id="password" class="text-start p-3 w-100 rounded-4" placeholder="رمز عبور را اینجا وارد کنید">
-                        <label for="account-type">نوع حساب </label>
-                        <select name="account-type" id="account-type" class="text-start p-3 w-100 rounded-4">
-                            <option value="g-mail" selected> جیمیل / گوگل پلی </option>
-                            <option value="g-mail"> جیمیل / گوگل پلی </option>
-                            <option value="g-mail"> جیمیل / گوگل پلی </option>
-                        </select>
-
-                    </form>
-
-
-                </div>
-                <div class="account-details account-card rounded-4 p-4 d-flex flex-column justify-content-start align-items-start gap-3">
-                    <h2>صورت حساب </h2>
-                    <span class="hr-line d-inline-block w-100"></span>
-                    <div class="invoice d-flex w-100 justify-content-between align-items-center my-2">
-                        <span class="invoice-title">مجموع کل</span>
-                        <span class="invoice-number">240.000 تومان</span>
-                    </div>
-                    <div class="invoice d-flex w-100 justify-content-between align-items-center my-2">
-                        <span class="invoice-title">مجموع تخفیف ها</span>
-                        <span class="invoice-number">110.000 تومان</span>
-                    </div>
-                    <div class="invoice d-flex w-100 justify-content-between align-items-center my-2">
-                        <span class="invoice-title">هرینه ارسال</span>
-                        <span class="invoice-number">0 تومان</span>
-                    </div>
-                    <div class="invoice final w-100 d-flex justify-content-between align-items-center my-2">
-                        <span class="invoice-title">قابل پرداخت</span>
-                        <span class="invoice-number">110.000 تومان</span>
-                    </div>
-                    <form action="" class="p-3 rounded-4 dicsount-code w-100 d-flex justify-content-between align-items-center">
-                        <input type="text"  placeholder="کد تخفیف دارید اینجا وارد کنید">
-                        <button type="submit" class="button-success rounded-pill h-100 py-2 px-4 flex-shrink-0">ثبت</button>
-                    </form>
-
-                    <h3 class="mt-4">انتخاب روش پرداخت</h3>
-                    <form action="" class="payment w-100">
-                        <label class="p-3 ps-4 rounded-4 mb-2 w-100" for="company-pay">
-                            <div class="rounded-4 d-flex justify-content-start align-items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M2 12C2 8.229 2 6.343 3.172 5.172C4.344 4.001 6.229 4 10 4H14C17.771 4 19.657 4 20.828 5.172C21.999 6.344 22 8.229 22 12C22 15.771 22 17.657 20.828 18.828C19.656 19.999 17.771 20 14 20H10C6.229 20 4.343 20 3.172 18.828C2.001 17.656 2 15.771 2 12Z" stroke="#7A7A7A" stroke-width="1.5"/>
-                                    <path d="M10 16H6M14 16H12.5M2 10H22" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round"/>
-                                    </svg>
-                                    کارت به کارت به حساب شرکت
-                            </div>
-                            <input type="radio" name="payment" id="company-pay" value="company-pay">
-                        </label>
-                        <label class="p-3 ps-4 rounded-4 mb-2 w-100" for="wallet-pay">
-                            <div class="rounded-4 d-flex justify-content-start align-items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M6 8H10" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M20.833 9H18.231C16.446 9 15 10.343 15 12C15 13.657 16.447 15 18.23 15H20.833C20.917 15 20.958 15 20.993 14.998C21.533 14.965 21.963 14.566 21.998 14.065C22 14.033 22 13.994 22 13.917V10.083C22 10.006 22 9.967 21.998 9.935C21.962 9.434 21.533 9.035 20.993 9.002C20.959 9 20.917 9 20.833 9Z" stroke="#7A7A7A" stroke-width="1.5"/>
-                                    <path d="M20.965 9C20.887 7.128 20.637 5.98 19.828 5.172C18.657 4 16.771 4 13 4H10C6.229 4 4.343 4 3.172 5.172C2.001 6.344 2 8.229 2 12C2 15.771 2 17.657 3.172 18.828C4.344 19.999 6.229 20 10 20H13C16.771 20 18.657 20 19.828 18.828C20.637 18.02 20.888 16.872 20.965 15" stroke="#7A7A7A" stroke-width="1.5"/>
-                                    <path d="M17.9902 12H18.0002" stroke="#7A7A7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    پرداخت از طریق کیف پول
-                            </div>
-                            <input type="radio" name="payment" id="wallet-pay" value="wallet-pay">
-                        </label>
-                        <label class="p-3 ps-4 rounded-4 mb-2 w-100" for="saman-pay">
-                            <div class="rounded-4 d-flex justify-content-start align-items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M11.996 7H12.005M4 10V18.5M8 10V18.5M16 10V18.5M20 10V18.5M2 8.57C2 7.373 2.482 6.64 3.48 6.084L7.59 3.797C9.743 2.6 10.82 2 12 2C13.18 2 14.257 2.6 16.41 3.797L20.52 6.084C21.517 6.64 22 7.373 22 8.57C22 8.894 22 9.057 21.965 9.19C21.779 9.89 21.144 10.001 20.531 10.001H3.469C2.856 10.001 2.222 9.891 2.035 9.19C2 9.056 2 8.894 2 8.57ZM19 18.5H5C4.20435 18.5 3.44129 18.8161 2.87868 19.3787C2.31607 19.9413 2 20.7044 2 21.5C2 21.6326 2.05268 21.7598 2.14645 21.8536C2.24021 21.9473 2.36739 22 2.5 22H21.5C21.6326 22 21.7598 21.9473 21.8536 21.8536C21.9473 21.7598 22 21.6326 22 21.5C22 20.7044 21.6839 19.9413 21.1213 19.3787C20.5587 18.8161 19.7956 18.5 19 18.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    پرداخت امن از طریق درگاه سامان
-                            </div>
-                            <input type="radio" name="payment" id="saman-pay" value="saman-pay">
-                        </label>
-                        <p class="my-3">پس از پرداخت سفارش شما در لیست اوپراتور قرار خواهد گرفت به تکمیل خواهد شد</p>
-
-                        <button class="button-success px-4 py-3 rounded-4">
-                            پرداخت و تکمیل سفارش
-                        </button>
-                    </form>
-                </div>
+            <div class="page shadow-m rounded-4 p-4">
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکفیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژیت. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژیت. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژیفیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژیت. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژیت. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژینولوژیت. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژیت. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی</p>
             </div>
         </section>
 

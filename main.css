@@ -117,6 +117,14 @@ button {
     color: #fff;
     background-color: var(--success-color);
 }
+.button-main{
+    color: #fff;
+    background-color: var(--main-color);
+}
+.button-second{
+    color: #fff;
+    background-color: var(--second-color);
+}
 
 header {
     svg {
@@ -558,4 +566,31 @@ header {
         height: 100%;
 
     }
+}
+
+
+.breadcrumb-container {
+    li {
+        a {
+            color: #ACACAC;
+        }
+    }
+
+    li:not(:first-child)::before {
+        content: '/';
+        color: #ACACAC;
+        margin: 0 0.3rem;
+    }
+}
+
+.page-details-header h2 {
+    font-size: 1.5rem;
+    color: #505050;
+    font-weight: 600;
+}
+.page p{
+    color:#929292;
+    font-size: 1rem;
+    line-height: 2rem;
+
 }

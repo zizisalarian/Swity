@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/lib/bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./font.css">
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./purchase.css">
+    <link rel="stylesheet" href="./basket.css">
 
     <title>Sonic</title>
 </head>
@@ -123,8 +123,8 @@
 
     <main>
 
-        <section class="purchase container mt-5">
-            <div class="purchase-header page-details-header text-center">
+        <section class="basket-page  container mt-5">
+            <div class="basket-header page-details-header text-center">
                 <nav class="breadcrumb-container">
 
                     <ul class="d-flex justify-content-center align-items-center">
@@ -136,28 +136,98 @@
                 </nav>
                 <h2>پرداخت</h2>
             </div>
-            <div class="purchase-content mt-5 d-flex justify-content-between align-items-start gap-5">
-                <div class="account-info account-card rounded-4 p-4 d-flex flex-column justify-content-start align-items-start gap-3">
-                    <h2>اطاعات حساب </h2>
-                    <span class="hr-line d-inline-block w-100"></span>
-                    <p class="warning p-4 rounded-4">توجه : ما برای شارژ حساب شما به این اطلاعات نیاز داریم پس فیلد های زیر را به دقت پر کنید...</p>
-                    <form action="" class="w-100 d-flex flex-column justify-content-start align-items-start gap-3">
-                        <label for="email">ایمیل حساب</label>
-                        <input type="email" id="email" class="text-start p-3 w-100 rounded-4" placeholder="ایمیلتان را اینجا بنویسید">
-                        <label for="password">رمز عبور</label>
-                        <input type="password" id="password" class="text-start p-3 w-100 rounded-4" placeholder="رمز عبور را اینجا وارد کنید">
-                        <label for="account-type">نوع حساب </label>
-                        <select name="account-type" id="account-type" class="text-start p-3 w-100 rounded-4">
-                            <option value="g-mail" selected> جیمیل / گوگل پلی </option>
-                            <option value="g-mail"> جیمیل / گوگل پلی </option>
-                            <option value="g-mail"> جیمیل / گوگل پلی </option>
-                        </select>
+            <div class="basket-content mt-5 d-flex justify-content-between align-items-start gap-5">
+                <div
+                    class="basket-info basket-card rounded-4 p-4 d-flex flex-column justify-content-start align-items-start gap-3">
+                    <div class=" basket-page-card overflow-hidden rounded-4 p-3 shadow-m mb-3 w-100 d-flex justify-content-start align-items-center gap-3 position-relative mb-3">
+                        <div class="card-shape position-absolute rounded-4"></div>
+                        <div class="rounded-4 overflow-hidden img-container">
+                            <img src="./assets/images/big-card.png" class="w-100" alt="">
+                        </div>
+                        <div class="d-flex justify-content-start align-items-start gap-2 flex-column">
+                            <h6 class="d-flex justify-content-start align-items-center gap-3">
+                                گیفت کارت 35 دلاری اپل
+                                <span class="card-flag d-inline-block rounded-circle overflow-hidden">
+                                    <img src="./assets/images/usa.png" class="w-100" alt="">
+                                </span>
+                            </h6>
+                            <p class="card-price">370.000 تومان</p>
+                            <div class="d-flex justify-content-start align-items-center gap-3">
 
-                    </form>
+                                <div
+                                    class="counter-section p-2 rounded-2 d-flex justify-content-between align-items-center">
+                                    <button class="minus rounded-2 d-flex justify-content-center align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path d="M11.6673 7H2.33398" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <span class="count-number">
+                                        1
+                                    </span>
+                                    <button class="add  rounded-2 d-flex justify-content-center align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path d="M7.00065 2.33331V11.6666M11.6673 6.99998H2.33398" stroke="white"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="button-second p-2 rounded-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M11.375 3.20835L11.0133 9.05627C10.9212 10.5502 10.8751 11.2974 10.5 11.8347C10.3148 12.1002 10.0764 12.3243 9.8 12.4927C9.24175 12.8334 8.49333 12.8334 6.9965 12.8334C5.49733 12.8334 4.74775 12.8334 4.18833 12.4921C3.91177 12.3234 3.67337 12.0989 3.48833 11.8329C3.11383 11.2951 3.06833 10.5467 2.9785 9.05044L2.625 3.20835M5.25 6.84544H8.75M6.125 9.13152H7.875M1.75 3.20835H12.25M9.36542 3.20835L8.96758 2.38702C8.70275 1.84102 8.57092 1.5686 8.34283 1.39827C8.29217 1.36054 8.23852 1.32698 8.18242 1.29794C7.92983 1.16669 7.6265 1.16669 7.01983 1.16669C6.39858 1.16669 6.08767 1.16669 5.83042 1.30319C5.77355 1.33364 5.71931 1.36876 5.66825 1.40819C5.43725 1.58494 5.30833 1.86785 5.0505 2.4331L4.69758 3.20835" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" basket-page-card overflow-hidden rounded-4 p-3 shadow-m mb-3 w-100 d-flex justify-content-start align-items-center gap-3 position-relative mb-3">
+                        <div class="card-shape position-absolute rounded-4"></div>
+                        <div class="rounded-4 overflow-hidden img-container">
+                            <img src="./assets/images/big-card.png" class="w-100" alt="">
+                        </div>
+                        <div class="d-flex justify-content-start align-items-start gap-2 flex-column">
+                            <h6 class="d-flex justify-content-start align-items-center gap-3">
+                                گیفت کارت 35 دلاری اپل
+                                <span class="card-flag d-inline-block rounded-circle overflow-hidden">
+                                    <img src="./assets/images/usa.png" class="w-100" alt="">
+                                </span>
+                            </h6>
+                            <p class="card-price">370.000 تومان</p>
+                            <div class="d-flex justify-content-start align-items-center gap-3">
 
-
+                                <div
+                                    class="counter-section p-2 rounded-2 d-flex justify-content-between align-items-center">
+                                    <button class="minus rounded-2 d-flex justify-content-center align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path d="M11.6673 7H2.33398" stroke="white" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <span class="count-number">
+                                        1
+                                    </span>
+                                    <button class="add  rounded-2 d-flex justify-content-center align-items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path d="M7.00065 2.33331V11.6666M11.6673 6.99998H2.33398" stroke="white"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <button class="button-second p-2 rounded-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M11.375 3.20835L11.0133 9.05627C10.9212 10.5502 10.8751 11.2974 10.5 11.8347C10.3148 12.1002 10.0764 12.3243 9.8 12.4927C9.24175 12.8334 8.49333 12.8334 6.9965 12.8334C5.49733 12.8334 4.74775 12.8334 4.18833 12.4921C3.91177 12.3234 3.67337 12.0989 3.48833 11.8329C3.11383 11.2951 3.06833 10.5467 2.9785 9.05044L2.625 3.20835M5.25 6.84544H8.75M6.125 9.13152H7.875M1.75 3.20835H12.25M9.36542 3.20835L8.96758 2.38702C8.70275 1.84102 8.57092 1.5686 8.34283 1.39827C8.29217 1.36054 8.23852 1.32698 8.18242 1.29794C7.92983 1.16669 7.6265 1.16669 7.01983 1.16669C6.39858 1.16669 6.08767 1.16669 5.83042 1.30319C5.77355 1.33364 5.71931 1.36876 5.66825 1.40819C5.43725 1.58494 5.30833 1.86785 5.0505 2.4331L4.69758 3.20835" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="account-details account-card rounded-4 p-4 d-flex flex-column justify-content-start align-items-start gap-3">
+                <div
+                    class="basket-details basket-card rounded-4 p-4 d-flex flex-column justify-content-start align-items-start gap-3">
                     <h2>صورت حساب </h2>
                     <span class="hr-line d-inline-block w-100"></span>
                     <div class="invoice d-flex w-100 justify-content-between align-items-center my-2">
@@ -176,50 +246,16 @@
                         <span class="invoice-title">قابل پرداخت</span>
                         <span class="invoice-number">110.000 تومان</span>
                     </div>
-                    <form action="" class="p-3 rounded-4 dicsount-code w-100 d-flex justify-content-between align-items-center">
-                        <input type="text"  placeholder="کد تخفیف دارید اینجا وارد کنید">
-                        <button type="submit" class="button-success rounded-pill h-100 py-2 px-4 flex-shrink-0">ثبت</button>
+                    <form action=""
+                        class="p-3 rounded-4 dicsount-code w-100 d-flex justify-content-between align-items-center">
+                        <input type="text" placeholder="کد تخفیف دارید اینجا وارد کنید">
+                        <button type="submit"
+                            class="button-success rounded-pill h-100 py-2 px-4 flex-shrink-0">ثبت</button>
                     </form>
 
-                    <h3 class="mt-4">انتخاب روش پرداخت</h3>
-                    <form action="" class="payment w-100">
-                        <label class="p-3 ps-4 rounded-4 mb-2 w-100" for="company-pay">
-                            <div class="rounded-4 d-flex justify-content-start align-items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M2 12C2 8.229 2 6.343 3.172 5.172C4.344 4.001 6.229 4 10 4H14C17.771 4 19.657 4 20.828 5.172C21.999 6.344 22 8.229 22 12C22 15.771 22 17.657 20.828 18.828C19.656 19.999 17.771 20 14 20H10C6.229 20 4.343 20 3.172 18.828C2.001 17.656 2 15.771 2 12Z" stroke="#7A7A7A" stroke-width="1.5"/>
-                                    <path d="M10 16H6M14 16H12.5M2 10H22" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round"/>
-                                    </svg>
-                                    کارت به کارت به حساب شرکت
-                            </div>
-                            <input type="radio" name="payment" id="company-pay" value="company-pay">
-                        </label>
-                        <label class="p-3 ps-4 rounded-4 mb-2 w-100" for="wallet-pay">
-                            <div class="rounded-4 d-flex justify-content-start align-items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M6 8H10" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M20.833 9H18.231C16.446 9 15 10.343 15 12C15 13.657 16.447 15 18.23 15H20.833C20.917 15 20.958 15 20.993 14.998C21.533 14.965 21.963 14.566 21.998 14.065C22 14.033 22 13.994 22 13.917V10.083C22 10.006 22 9.967 21.998 9.935C21.962 9.434 21.533 9.035 20.993 9.002C20.959 9 20.917 9 20.833 9Z" stroke="#7A7A7A" stroke-width="1.5"/>
-                                    <path d="M20.965 9C20.887 7.128 20.637 5.98 19.828 5.172C18.657 4 16.771 4 13 4H10C6.229 4 4.343 4 3.172 5.172C2.001 6.344 2 8.229 2 12C2 15.771 2 17.657 3.172 18.828C4.344 19.999 6.229 20 10 20H13C16.771 20 18.657 20 19.828 18.828C20.637 18.02 20.888 16.872 20.965 15" stroke="#7A7A7A" stroke-width="1.5"/>
-                                    <path d="M17.9902 12H18.0002" stroke="#7A7A7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    پرداخت از طریق کیف پول
-                            </div>
-                            <input type="radio" name="payment" id="wallet-pay" value="wallet-pay">
-                        </label>
-                        <label class="p-3 ps-4 rounded-4 mb-2 w-100" for="saman-pay">
-                            <div class="rounded-4 d-flex justify-content-start align-items-center gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M11.996 7H12.005M4 10V18.5M8 10V18.5M16 10V18.5M20 10V18.5M2 8.57C2 7.373 2.482 6.64 3.48 6.084L7.59 3.797C9.743 2.6 10.82 2 12 2C13.18 2 14.257 2.6 16.41 3.797L20.52 6.084C21.517 6.64 22 7.373 22 8.57C22 8.894 22 9.057 21.965 9.19C21.779 9.89 21.144 10.001 20.531 10.001H3.469C2.856 10.001 2.222 9.891 2.035 9.19C2 9.056 2 8.894 2 8.57ZM19 18.5H5C4.20435 18.5 3.44129 18.8161 2.87868 19.3787C2.31607 19.9413 2 20.7044 2 21.5C2 21.6326 2.05268 21.7598 2.14645 21.8536C2.24021 21.9473 2.36739 22 2.5 22H21.5C21.6326 22 21.7598 21.9473 21.8536 21.8536C21.9473 21.7598 22 21.6326 22 21.5C22 20.7044 21.6839 19.9413 21.1213 19.3787C20.5587 18.8161 19.7956 18.5 19 18.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                    پرداخت امن از طریق درگاه سامان
-                            </div>
-                            <input type="radio" name="payment" id="saman-pay" value="saman-pay">
-                        </label>
-                        <p class="my-3">پس از پرداخت سفارش شما در لیست اوپراتور قرار خواهد گرفت به تکمیل خواهد شد</p>
-
-                        <button class="button-success px-4 py-3 rounded-4">
-                            پرداخت و تکمیل سفارش
-                        </button>
-                    </form>
+                    <button class="button-main px-4 py-3 rounded-4">
+                        پرداخت و تکمیل سفارش
+                    </button>
                 </div>
             </div>
         </section>

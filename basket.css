@@ -1,0 +1,99 @@
+
+.invoice {
+    span {
+        color: #505050;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .invoice-number {
+        font-weight: 600;
+    }
+
+    &.final {
+        .invoice-title {
+            color: #00C94D;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .invoice-number {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.dicsount-code {
+    background-color: #00C94D22;
+
+    input {
+        background-color: transparent;
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+
+    input::placeholder {
+        color: #00C94D
+    }
+
+}
+
+.basket-card {
+    flex: 1 0 0;
+    box-shadow: 0px 4px 12.5px 0px #0000000F;
+
+}
+.basket-page-card{
+    >p{
+        color: #383838;
+        font-weight: 700;
+    }
+    h6{
+        font-size: 1rem;
+        color: #505050
+    }
+    .img-container{
+        width: 8rem;
+        height: 8rem;
+    }
+    .card-flag{
+        width: 2rem;
+        height:2rem;
+    }
+    .counter-section{
+        
+        background-color: #D9E3F6;
+        button{
+            width: 2rem;
+            height: 2rem;
+            background-color: var(--main-color);
+        }
+        .count-number{
+            width: 2rem;
+            height: 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    .card-price{
+        font-weight: 600;
+    }
+    button.button-second{
+        svg{
+            width: 1.5rem;
+            height: 1.5rem
+        }
+    }
+}
+.card-shape{
+    height:100%;
+    width: auto;
+    aspect-ratio: 1;
+    background-color: var(--success-color);
+    opacity: 0.1;
+    top:-3.5rem;
+    left:-3.5rem;
+    transform: rotate(-15deg);
+}
