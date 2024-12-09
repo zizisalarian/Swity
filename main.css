@@ -287,9 +287,9 @@ header {
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    /* grid-template-rows: 1fr; */
     grid-column-gap: 30px;
-    grid-row-gap: 0px;
+    grid-row-gap: 30px;
 }
 
 .price {
@@ -316,9 +316,8 @@ header {
 
 
     .add-basket {
-        color: #fff;
+       
         font-size: .9rem;
-        background-color: var(--success-color);
 
         svg {
             width: 1.5rem;
@@ -597,4 +596,12 @@ header {
 .hr-line {
     background-color: #D6D6D6;
     height: 1px;
+}
+
+.pagination{
+    background-color: #ECECEC;
+    a{
+        color: #B5B5B5;
+        font-size: 1rem
+    }
 }
