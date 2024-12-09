@@ -111,15 +111,23 @@ button {
 }
 
 .shadow-m {
-    box-shadow: 4px 2px 10px #00000012;
+    box-shadow: 4px 2px 10px #00000012 !important;
 }
 .button-success{
     color: #fff;
     background-color: var(--success-color);
 }
+.button-success-light{
+    color: var(--success-color) !important;
+    background-color:#00C94D22
+}
 .button-main{
     color: #fff;
     background-color: var(--main-color);
+}
+.button-main-light{
+    color: var(--main-color);
+    background-color: #D9E3F6;
 }
 .button-second{
     color: #fff;
@@ -583,6 +591,11 @@ header {
 }
 
 .page-details-header h2 {
+    font-size: 1.5rem;
+    color: #505050;
+    font-weight: 600;
+}
+.page-details h2{
     font-size: 1.5rem;
     color: #505050;
     font-weight: 600;

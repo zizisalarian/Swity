@@ -1,0 +1,229 @@
+.account-card {
+    flex: 1 0 0;
+
+    .header {
+        svg {
+            width: 2.5rem;
+            height: 2.5rem
+        }
+    }
+}
+
+.account-info{
+    position: sticky;
+    top: 1rem;
+    box-shadow: 4px 2px 10.8px 0px #00000012;
+
+}
+.account-details>div {
+    box-shadow: 4px 2px 10.8px 0px #00000012;
+
+
+}
+.account-details>div.shadow-card-0{
+    box-shadow: none;
+}
+
+.shadow-card{
+    box-shadow: 4px 2px 10.8px 0px #00000012;
+}
+
+.account-details p {
+    font-size: 1.1rem;
+    color: #848484;
+
+    &.txt-second {
+        color: var(--second-color);
+        font-size: 1rem;
+
+    }
+
+}
+
+.profile {
+    .img-container {
+        width: 120px;
+        aspect-ratio: 1.2;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+    }
+
+    h5 {
+        color: #535353;
+        font-size: 1.2rem;
+    }
+
+    p {
+        color: #A6A6A6;
+        font-size: 1rem;
+    }
+}
+
+.account-tabs {
+    li:nth-child(odd) {
+        background-color: #F1F1F1;
+    }
+
+    button {
+        color: #535353
+    }
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem
+    }
+}
+
+.tab-pane .button-main-light {
+    font-size: 1.2rem;
+
+    svg {
+        width: 2rem;
+        height: 2rem
+    }
+
+}
+
+.order-detail {
+    border: 1px solid #DDDDDD;
+
+    span {
+        color: #505050
+    }
+}
+
+.change-profile {
+    cursor: pointer;
+    background-color: #00000066;
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    input {
+        cursor: pointer;
+
+    }
+}
+
+.user-info {
+    label {
+        font-size: 0.9rem;
+        color: #8B8989;
+    }
+
+    input {
+        border: 1px solid #E8E8E8;
+        outline: none;
+    }
+
+    button {
+        width: fit-content
+    }
+}
+
+
+
+.invoice {
+    span {
+        color: #505050;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .invoice-number {
+        font-weight: 600;
+    }
+
+    &.final {
+        .invoice-title {
+            color: #00C94D;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .invoice-number {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.dicsount-code {
+    background-color: #00C94D22;
+
+    input {
+        background-color: transparent;
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+
+    input::placeholder {
+        color: #00C94D
+    }
+
+}
+
+.basket-card {
+    flex: 1 0 0;
+    box-shadow: 0px 4px 12.5px 0px #0000000F;
+
+}
+.basket-page-card{
+    >p{
+        color: #383838;
+        font-weight: 700;
+    }
+    h6{
+        font-size: 1rem;
+        color: #505050
+    }
+    .img-container{
+        width: 8rem;
+        height: 8rem;
+    }
+    .card-flag{
+        width: 2rem;
+        height:2rem;
+    }
+    .counter-section{
+        
+        background-color: #D9E3F6;
+        button{
+            width: 2rem;
+            height: 2rem;
+            background-color: var(--main-color);
+        }
+        .count-number{
+            width: 2rem;
+            height: 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+    .card-price{
+        font-weight: 600;
+    }
+    button.button-second{
+        svg{
+            width: 1.5rem;
+            height: 1.5rem
+        }
+    }
+}
+.card-shape{
+    height:100%;
+    width: auto;
+    aspect-ratio: 1;
+    background-color: var(--success-color);
+    opacity: 0.1;
+    top:-3.5rem;
+    left:-3.5rem;
+    transform: rotate(-15deg);
+}
+.shadow-card-0{
+    box-shadow: none;
+}
