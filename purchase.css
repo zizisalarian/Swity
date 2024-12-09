@@ -1,0 +1,146 @@
+.breadcrumb-container {
+    li {
+        a {
+            color: #ACACAC;
+        }
+    }
+
+    li:not(:first-child)::before {
+        content: '/';
+        color: #ACACAC;
+        margin: 0 0.3rem;
+    }
+}
+
+.purchase h2 {
+    font-size: 1.5rem;
+    color: #505050;
+    font-weight: 600;
+}
+
+.account-card {
+    flex: 1 0 0;
+    box-shadow: 0px 4px 12.5px 0px #0000000F;
+
+}
+
+.hr-line {
+    background-color: #D6D6D6;
+    height: 1px;
+}
+
+.warning {
+    background-color: #FF732821;
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+.account-info {
+    position: sticky;
+    top:1rem;
+    label::after {
+        content: '*';
+        color: red;
+        font-size: 1.2rem;
+        margin: 0 0.3rem;
+    }
+
+    input {
+        background-color: #EEEEEE;
+        color: #505050;
+        border: none;
+        outline: none;
+    }
+
+    select {
+        background-color: #EEEEEE;
+        color: #ABABAB;
+        border: none;
+        outline: none;
+    }
+
+    input::placeholder {
+        color: #ABABAB
+    }
+}
+
+.invoice {
+    span {
+        color: #505050;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .invoice-number {
+        font-weight: 600;
+    }
+
+    &.final {
+        .invoice-title {
+            color: #00C94D;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .invoice-number {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.dicsount-code {
+    background-color: #00C94D22;
+
+    input {
+        background-color: transparent;
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+
+    input::placeholder {
+        color: #00C94D
+    }
+
+}
+
+.account-details h3 {
+    color: #7A7A7A;
+    font-size: 1.2rem;
+}
+
+.payment {
+    input {
+        display: none;
+    }
+
+    label {
+        font-size: 0.9rem;
+        color: #7A7A7A;
+        background: #ECECEC;
+
+        svg path {
+            stroke: #7A7A7A;
+        }
+
+        &:has(input:checked) {
+            background-color: #0040C9;
+            color: #fff;
+
+            svg path {
+                stroke: #fff;
+            }
+
+        }
+    }
+    p{
+        color: #A8A8A8;
+        font-size: 0.8rem;
+    }
+    button{
+        font-size: 0.8rem;
+    }
+
+}
