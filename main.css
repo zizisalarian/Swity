@@ -594,3 +594,7 @@ header {
     line-height: 2rem;
 
 }
+.hr-line {
+    background-color: #D6D6D6;
+    height: 1px;
+}
