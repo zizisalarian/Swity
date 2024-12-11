@@ -1176,4 +1176,10 @@ header {
             }
         }
     }
+    .add-basket{
+        border-radius: 0.5rem !important;
+    }
+    .pagination a{
+        font-size: 0.8rem;
+    }
 }
