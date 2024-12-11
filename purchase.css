@@ -1,4 +1,8 @@
-
+h2{
+    font-size: 1.5rem;
+    color: #505050;
+    font-weight: 600;
+}
 
 .account-card {
     flex: 1 0 0;
@@ -122,4 +126,62 @@
         font-size: 0.8rem;
     }
 
+}
+
+    @media (max-width: 992px) {
+        .warning{
+            font-size: 0.7rem;
+            line-height: 1.3rem;
+        }
+    .account-info {
+        position: static;
+        label{
+            font-size: 0.7rem;
+        }
+        input{
+            font-size: 0.7rem;
+        }
+        select{
+            font-size: 0.7rem;
+        }
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .invoice {
+        span{
+            font-size: .7rem;
+        }
+        &.final {
+            .invoice-title{
+                font-size: 0.875rem
+            }
+            .invoice-number{
+               font-size: 0.875rem
+
+           }
+        }
+    }
+    .dicsount-code{
+        padding: 13px !important;
+        button{
+            font-size: 0.7rem;
+        }
+    }
+    .dicsount-code input{
+        font-size: 0.7rem;
+    }
+    .account-details h3{
+        font-size: 0.875rem;
+    }
+    .payment{
+
+        p{
+            font-size: 0.7rem;
+        }
+        label{
+            font-size: 0.7rem;
+            
+        }
+    }
 }
