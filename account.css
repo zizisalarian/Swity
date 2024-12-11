@@ -227,3 +227,156 @@
 .shadow-card-0{
     box-shadow: none;
 }
+
+
+@media (max-width: 992px){
+    .account-page{
+        flex-wrap: wrap;
+        >div{
+            min-width: 100%;
+        }
+    }
+    .account-info{
+        box-shadow: 4px 2px 10.8px 0px #00000012;
+
+        position: static;
+        a.button-second{
+            font-size: 0.7rem
+        }
+    }
+    .page-details h2{
+        font-size: 0.8rem
+    }
+    .account-card {
+        & .header {
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+    }
+    .profile{
+        h5{
+            font-size: 0.75rem;
+        }
+        p{
+            font-size: 0.75rem;
+        }
+        .img-container{
+            width: 72px
+        }
+    }
+    .account-tabs {
+        li{
+            font-size: 0.75rem
+        }
+        svg{
+            width: 1.2rem;
+            height: 1.2rem
+        }
+       
+    }
+    .account-info .account-menu{
+        display: none;
+    }
+    .account-info:has(:checked) .account-menu{
+        display: block
+    }
+    .tab-pane .button-main-light{
+        font-size: 0.75rem
+    }
+    .tab-pane .button-main-light svg{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    .order-detail span{
+        font-size: 0.75rem;
+    }
+    .button-success ,  .button-main , .button-second{
+        font-size: 0.75rem;
+    }
+    .account-details h2{
+        font-weight: 600;
+    }
+
+    .account-details p{
+        font-size: 0.75rem;
+    }
+    .account-details p {
+        &.txt-second {
+            font-size: 0.75rem;
+        }
+    }
+    .user-info {
+        label {
+            font-size: 0.75rem;
+        }
+    }
+    .invoice {
+        span{
+            font-size: .7rem;
+        }
+        &.final {
+            .invoice-title{
+                font-size: 0.875rem
+            }
+            .invoice-number{
+               font-size: 0.875rem
+
+           }
+        }
+    }
+    .basket-content{
+        flex-wrap: wrap;
+        >div{
+            width: 100%
+        }
+    }
+    .basket-page-card .img-container{
+        width: 5.375rem;
+        height: 5.375rem;
+    }
+    .card-shape{
+        left: -4.5rem;
+        top: -2.5rem;
+    }
+    .basket-page-card {
+        h6 {
+            font-size: 0.7rem;
+        }
+        .card-flag{
+            width: 1.2rem;
+            height: 1.2rem;;
+        }
+        .card-price{
+            font-size: 0.7rem;
+        }
+    }
+    .basket-page-card {
+       .counter-section {
+            button {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+            .count-number{
+                width: 1.2rem;
+                height: 1.2rem;
+                font-size: 0.8rem;
+            }
+        }
+        button.button-second {
+            width: 27px;
+            height: 27px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+    }
+    .basket-info{
+        box-shadow: none !important;
+    }
+}
