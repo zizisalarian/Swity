@@ -1182,4 +1182,10 @@ header {
     .pagination a{
         font-size: 0.8rem;
     }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .big-card{
+        width: unset
+    }
 }
