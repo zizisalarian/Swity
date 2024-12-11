@@ -964,6 +964,38 @@ header {
             font-size: 0.75rem;
         }
     }
+    .page{
+        margin-top: 1rem;
+        p{
+            font-size: 0.7rem;
+        }
+    }
+    .hr-cards{
+        flex-wrap: wrap;
+        .hr-card{
+            width: 100%;
+            padding: 0 !important;
+            height: 61px;
+            margin-bottom: 0.75rem;
+            .img{
+                border-radius: 0.7rem !important;
+            }
+            .article-date{
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .card-name{
+        font-size: 0.7rem;
+    }
+    .slider-header {
+        h5 {
+            font-size: 0.875rem;
+        }
+        a{
+            font-size: 0.7rem
+        }
+    }
 }
 
 .mobile-profile{
