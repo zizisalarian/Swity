@@ -1243,4 +1243,17 @@ header {
             }
         }
     }
+    .blog-cards{
+        flex-wrap: wrap;
+        >div{
+            flex: 1 0 0;
+            display: none;
+        }
+        >div:nth-child(-n+4){
+            display: block;
+        }
+    }
+    .cat{
+        font-size: 0.7rem
+    }
 }
