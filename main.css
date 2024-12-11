@@ -196,9 +196,11 @@ header {
         left: 40%;
     }
 }
-.search-container input{
+
+.search-container input {
     background-color: transparent;
 }
+
 .basket-notif {
     width: 8px;
     height: 8px;
@@ -790,18 +792,23 @@ header {
     }
 
 }
-.modal-body button{
+
+.modal-body button {
     font-size: 0.9rem;
 }
-.modal-body form{
+
+.modal-body form {
     display: none !important
 }
-.modal-body:has(#signup:checked) form.signup{
+
+.modal-body:has(#signup:checked) form.signup {
     display: flex !important
 }
-.modal-body:has(#login:checked) form.login{
+
+.modal-body:has(#login:checked) form.login {
     display: flex !important
 }
+
 @media (max-width: 992px) {
 
     .navbar-toggler {
@@ -819,9 +826,10 @@ header {
         }
     }
 
-    .navbar-nav{
+    .navbar-nav {
         gap: 0.5rem !important
     }
+
     header {
         & .menu-container {
             padding-right: 2rem;
@@ -964,82 +972,96 @@ header {
             font-size: 0.75rem;
         }
     }
-    .page{
+
+    .page {
         margin-top: 1rem;
-        p{
+
+        p {
             font-size: 0.7rem;
         }
     }
-    .hr-cards{
+
+    .hr-cards {
         flex-wrap: wrap;
-        .hr-card{
+
+        .hr-card {
             width: 100%;
             padding: 0 !important;
             height: 61px;
             margin-bottom: 0.75rem;
-            .img{
+
+            .img {
                 border-radius: 0.7rem !important;
             }
-            .article-date{
+
+            .article-date {
                 font-size: 0.7rem;
             }
         }
     }
-    .card-name{
+
+    .card-name {
         font-size: 0.7rem;
     }
+
     .slider-header {
         h5 {
             font-size: 0.875rem;
         }
-        a{
+
+        a {
             font-size: 0.7rem
         }
     }
 }
 
-.mobile-profile{
-    .img-container{
+.mobile-profile {
+    .img-container {
         width: 4rem;
         height: 4rem;
         background-size: cover;
         background-position: center;
 
     }
-    p{
-        font-size:0.7rem;
-        
+
+    p {
+        font-size: 0.7rem;
+
     }
-    h6{
-        font-size:0.7rem;
+
+    h6 {
+        font-size: 0.7rem;
         font-weight: 600;
 
     }
 }
-.mobile-menu{
-    >ul >li{
-        &:nth-child(odd){
-           > a{
+
+.mobile-menu {
+    >ul>li {
+        &:nth-child(odd) {
+            >a {
                 background-color: #F1F1F1;
 
             }
-            >label >a{
+
+            >label>a {
                 pointer-events: none;
                 background-color: #F1F1F1;
             }
         }
 
-        a{
-            
+        a {
+
             color: #535353;
             font-size: 0.7rem
         }
-        ul{
-            border:1px solid #DADADA;
+
+        ul {
+            border: 1px solid #DADADA;
             position: relative;
-           
-            &::before{
-                content:'';
+
+            &::before {
+                content: '';
                 display: inline-block;
                 width: 0.7rem;
                 height: 0.7rem;
@@ -1056,26 +1078,102 @@ header {
 
 
 }
-.menu-label input{
+
+.menu-label input {
     display: none;
 }
-.menu-label+ul{
+
+.menu-label+ul {
     display: none;
 }
-.hide-btn{
+
+.hide-btn {
     display: none
 }
+
 .menu-label:has(:checked) {
-    &+ul{
+    &+ul {
         display: block
     }
-    .hide-btn{
+
+    .hide-btn {
         display: inline-block;
     }
-    .show-btn{
+
+    .show-btn {
         display: none;
     }
 }
-.logout{
+
+.logout {
     font-size: 0.7rem
+}
+
+
+
+@media (max-width: 992px) {
+    .cards {
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+
+    .big-card {
+        width: 140px;
+        flex-shrink: 0;
+        padding: 0.7rem !important;
+        border-radius: 1rem !important;
+
+        .img {
+            border-radius: 1rem !important;
+
+        }
+
+        .flag {
+            width: 0.8rem;
+            height: 0.8rem;
+            flex-shrink: 0;
+            display: flex;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .price {
+        font-size: 0.7rem;
+    }
+
+    .big-card {
+        .add-basket {
+            font-size: 0.5rem;
+        }
+    }
+    .big-card {
+         .add-basket {
+            svg {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+    }
+
+    .card-model-1-container {
+        .show-more{
+            font-size: 0.5rem;
+        }
+         .content {
+            h5{
+                font-size: .75rem
+            }
+            p{
+                font-size: .7rem
+            }
+            .img-container {
+                height: 3rem;
+                width: auto;
+                aspect-ratio: 1;
+            }
+        }
+    }
 }
